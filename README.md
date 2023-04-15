@@ -45,10 +45,10 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- OLTP vs OLAP
 	
 ## Types of NoSQL databases & their purposes
-		- Document oriented
-		- Wide Column,
-		- Key Value
-		- Graph
+	- Document oriented
+	- Wide Column,
+	- Key Value
+	- Graph
 	
 ### Which NoSQL database to choose when?
 		- As per CAP theorem, we must choose from CA, AP or CP characteristics for a given system.
