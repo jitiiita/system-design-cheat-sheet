@@ -43,50 +43,46 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- SQL vs NoSQL
 	- Characteristics: ACID vs BASE
 	- OLTP vs OLAP
-	- Types of NoSQL databases & their purposes
-	- Document oriented
-	- Wide Column,
-	- Key Value
-	- Graph
-	- Which NoSQL database to choose when?
-	- As per CAP theorem, we must choose from CA, AP or CP characteristics for a given system.
-	- Choose K:V Stores if:
+	
+	## Types of NoSQL databases & their purposes
+		- Document oriented
+		- Wide Column,
+		- Key Value
+		- Graph
+	
+	### Which NoSQL database to choose when?
+		- As per CAP theorem, we must choose from CA, AP or CP characteristics for a given system.
+	
+	### Choose K:V Stores if:
 	- Simple schema
 	- High velocity read/write with no frequent updates
 	- High performance and scalability
 	- No complex queries involving multiple keys or joins
-	- Choose Document Stores if:
+	### Choose Document Stores if:
 	- Flexible schema with complex querying
 	- JSON/BSON or XML data formats
 	- Leverage complex Indexes (multikey, geospatial, full text search etc)
 	- High performance and balanced R:W ratio
-	- Choose Column-Oriented Database if:
+	### Choose Column-Oriented Database if:
 	- High volume of data
 	- Extreme write speeds with relatively less velocity reads
 	- Data extractions by columns using row keys
 	- No ad-hoc query patterns, complex indices or high level of aggregations
-	- Choose Graph Database if:
+	### Choose Graph Database if:
 	- Applications requiring traversal between data points
 	- Ability to store properties of each data point as well as relationship between them
 	- Complex queries to determine relationships between data points
 	- Need to detect patterns between data points
-	- Data Caching
-	- Eviction Policies - LRU, MRU, LFU, FIFO, LIFO, Random Replacement
-	- Invalidation Policies - Read through, Write through, Refresh ahead, Write behind, Cache Ahead
-	- What is TTL (Time to Live)?
-	- What is Cache Miss? When does it happen?
+	
 	- Basic Components of a Distributed System
 	- Content Delivery Network (CDN)
 	- Load Balancer
 	- Web Server Vs Application Server
 	- IaaS (Infrastructure as a Service) vs PaaS (Platform as a Service) vs SaaS (Software as a Service) vs FaaS (Function as a Service)
+	
 	- Proxies - Forward Proxy & Reverse Proxy
 	- API Gateway
 	- Service Mesh Architecture
-	- Communication Protocols
-	- HTTP/HTTPS, REST, gRPC
-	- REST vs gRPC for inter-service communication
-	- Other protocols: SOAP, TCP, UDP, XMPP, AMQP, MQTT, STOMP, Openwire
 	- Data structure formats
 	- JSON, BLOB - Avro, Thrift, Ion, Protobuffs
 	- Notification Mechanisms
@@ -107,7 +103,19 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Physical Machines vs Virtual Machines vs Containers as Hosts
 	- Data Protection, Encryption at Rest, Encryption in transit, Principle of least privilege
 	- Threat Modelling & Security concerns
-	- Famous algorithms
+	
+	## Data Caching
+	- Eviction Policies - LRU, MRU, LFU, FIFO, LIFO, Random Replacement
+	- Invalidation Policies - Read through, Write through, Refresh ahead, Write behind, Cache Ahead
+	- What is TTL (Time to Live)?
+	- What is Cache Miss? When does it happen?
+	
+	## Communication Protocols
+	- HTTP/HTTPS, REST, gRPC
+	- REST vs gRPC for inter-service communication
+	- Other protocols: SOAP, TCP, UDP, XMPP, AMQP, MQTT, STOMP, Openwire
+	
+	## Famous algorithms
 	- Bloom Filter
 	- Count Min Sketch
 	- Geohash / S2 Geometry (Used in Uber Engineering)
