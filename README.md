@@ -84,10 +84,10 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- API Gateway
 	- Service Mesh Architecture
 	- Data structure formats
-	- JSON, BLOB - Avro, Thrift, Ion, Protobuffs
+		- JSON, BLOB - Avro, Thrift, Ion, Protobuffs
 	- Notification Mechanisms
-	- Long Polling
-	- Web Sockets
+		### Long Polling
+		### Web Sockets
 	- Messaging Queues & Why we need them
 	- Back pressure in Message based systems
 	- Event-driven architecture - How it supports decoupling, Event Handlers, Dead Letter Queues (DLQ)
