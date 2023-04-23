@@ -76,16 +76,16 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	
 ### Basic Components of a Distributed System
 	- Content Delivery Network (CDN)
-	- Load Balancer
 	- Web Server Vs Application Server
-	- IaaS (Infrastructure as a Service) vs PaaS (Platform as a Service) vs SaaS (Software as a Service) vs FaaS (Function as a Service)
-	
+	- IaaS (Infrastructure as a Service) vs PaaS (Platform as a Service) vs SaaS (Software as a Service) vs FaaS (Function as a Service)	
 	- Proxies - Forward Proxy & Reverse Proxy
 	- API Gateway
 	- Service Mesh Architecture
 	- Data structure formats
 		- JSON, BLOB - Avro, Thrift, Ion, Protobuffs
 	- Notification Mechanisms
+		- Pull
+		- Push
 		- Long Polling
 		- Web Sockets
 	- Messaging Queues & Why we need them
