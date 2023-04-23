@@ -25,7 +25,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Stateful vs Stateless Systems (and their relation to Horizontal Scaling)
 	- CAP Theorem
 	- Consistency Vs Availability
-  	- Types of Consistencies: Weak, Eventual & Strong/Immediate Consistencies
+	
 ### Consistency models
 	- Sequential consistency
 	- Strict/Strong consistency/Linearlizability
@@ -33,6 +33,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Eventual consistency (Monotonic reads, Monotonic writes, Read your own writes)
 	- Read after write/create
 	- Serializability
+
 ## Database Concepts
 	- Parititioning/Sharding
 	- Indexing
@@ -53,22 +54,22 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 ### Which NoSQL database to choose when?
 		- As per CAP theorem, we must choose from CA, AP or CP characteristics for a given system.
 	
-### Choose K:V Stores if:
+#### Choose K:V Stores if:
 	- Simple schema
 	- High velocity read/write with no frequent updates
 	- High performance and scalability
 	- No complex queries involving multiple keys or joins
-### Choose Document Stores if:
+#### Choose Document Stores if:
 	- Flexible schema with complex querying
 	- JSON/BSON or XML data formats
 	- Leverage complex Indexes (multikey, geospatial, full text search etc)
 	- High performance and balanced R:W ratio
-### Choose Column-Oriented Database if:
+#### Choose Column-Oriented Database if:
 	- High volume of data
 	- Extreme write speeds with relatively less velocity reads
 	- Data extractions by columns using row keys
 	- No ad-hoc query patterns, complex indices or high level of aggregations
-### Choose Graph Database if:
+#### Choose Graph Database if:
 	- Applications requiring traversal between data points
 	- Ability to store properties of each data point as well as relationship between them
 	- Complex queries to determine relationships between data points
