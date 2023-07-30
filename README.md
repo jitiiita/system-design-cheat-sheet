@@ -22,7 +22,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Traffic Estimation, QPS, TPS, Read Write Ratio
 	- Service Discovery & Health Checks
 	- Idempotence in Systems
-	- Stateful vs Stateless Systems (and their relation to Horizontal Scaling)
+	- Stateful vs Stateless Systems (and their Relation to Horizontal Scaling)
 	- CAP Theorem
 	- Consistency Vs Availability
 	
@@ -49,7 +49,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Document oriented
 	- Wide Column,
 	- Key Value
- 		-- key-value stores, are designed to store data in a schema-less manner, providing high scalability, availability, and fast access to data. Key-value databases are often used in various use cases where simple data access patterns, caching, and distributed storage are required
+ 		### key-value stores, are designed to store data in a schema-less manner, providing high scalability, availability, and fast access to data. Key-value databases are often used in various use cases where simple data access patterns, caching, and distributed storage are required
 	- Graph
 	
 ### Which NoSQL database to choose when?
