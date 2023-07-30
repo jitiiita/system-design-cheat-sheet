@@ -49,6 +49,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Document oriented
 	- Wide Column,
 	- Key Value
+ 		-- key-value stores, are designed to store data in a schema-less manner, providing high scalability, availability, and fast access to data. Key-value databases are often used in various use cases where simple data access patterns, caching, and distributed storage are required
 	- Graph
 	
 ### Which NoSQL database to choose when?
