@@ -37,7 +37,7 @@ What we should prepare for System Design (High-Level Design) Interviews:
 ## Database Concepts
 	- Partitioning/Sharding
 	- Indexing
-	- Data Replication models - Master Master, Master-Slave etc.
+	- Data Replication models - Master Master, Master-Slave, etc.
 	- Data Replication types - Leader-based, Leaderless
 	- Normalization vs Denormalization
 	- Change Streams
@@ -106,6 +106,7 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Threat Modelling & Security Concerns
 	
 ### Data Caching
+	- Query-Object Level, Client, CDN, Webserver, Database, Application
 	- Eviction Policies - LRU, MRU, LFU, FIFO, LIFO, Random Replacement
 	- Invalidation Policies - Read through, Write through, Refresh ahead, Write behind, Cache Ahead
 	- What is TTL (Time to Live)?
@@ -114,6 +115,7 @@ What we should prepare for System Design (High-Level Design) Interviews:
 ### Communication Protocols
 	- HTTP/HTTPS, REST, gRPC
 	- REST vs gRPC for inter-service communication
+ 	- WebSocket, SSE, Long Polling
 	- Other protocols: SOAP, TCP, UDP, XMPP, AMQP, MQTT, STOMP, Openwire
 	
 ### Famous algorithms
@@ -122,4 +124,8 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Geohash / S2 Geometry (Used in Uber Engineering)
 	- Quadtree (Used in Uber Engineering)
 	- Reverse index (Used in Web Crawlers like Google)
+ ### Clocks
+ 	- Physical clock
+  	- Lamport clock (logical)
+   	- Vector clock
 
