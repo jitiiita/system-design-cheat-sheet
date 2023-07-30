@@ -1,6 +1,6 @@
 # system-design-cheat-sheet
 System Design Interview Preparation Cheatsheet
-What all we should prepare for System Design (High-Level Design) Interviews:
+What we should prepare for System Design (High-Level Design) Interviews:
 
 # TOPICS/CONCEPTS
 	- Vertical Scaling (Scale Up) Vs Horizontal Scaling (Scale Out)
@@ -8,7 +8,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 			- L3, L4, L7, Round Robin, Weighted Round Robin, IP Hash, Least Connections
 	- Consistent Hashing
 	- Monolithic Architecture Vs Service Oriented Architecture (SOA) Vs MicroServices Architecture
-	- What is Single Point of Failure (SPOF)? When does it happen?
+	- What is a Single Point of Failure (SPOF)? When does it happen?
 	- Non-functional requirements
 	- Availability (High-availability, Fault tolerance, Resilience, Reliability)
 	- Consistency
@@ -28,16 +28,16 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	
 ### Consistency models
 	- Sequential consistency
-	- Strict/Strong consistency/Linearlizability
+	- Strict/Strong consistency/Linearizability
 	- Casual consistency
 	- Eventual consistency (Monotonic reads, Monotonic writes, Read your own writes)
 	- Read after write/create
 	- Serializability
 
 ## Database Concepts
-	- Parititioning/Sharding
+	- Partitioning/Sharding
 	- Indexing
-	- Data Replication models - Master Master, Master Slave etc.
+	- Data Replication models - Master Master, Master-Slave etc.
 	- Data Replication types - Leader-based, Leaderless
 	- Normalization vs Denormalization
 	- Change Streams
@@ -62,16 +62,16 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 #### Choose Document Stores if:
 	- Flexible schema with complex querying
 	- JSON/BSON or XML data formats
-	- Leverage complex Indexes (multikey, geospatial, full text search etc)
+	- Leverage complex Indexes (multikey, geospatial, full-text search, etc)
 	- High performance and balanced R:W ratio
 #### Choose Column-Oriented Database if:
 	- High volume of data
 	- Extreme write speeds with relatively less velocity reads
 	- Data extractions by columns using row keys
-	- No ad-hoc query patterns, complex indices or high level of aggregations
+	- No ad-hoc query patterns, complex indices, or high levels of aggregations
 #### Choose Graph Database if:
 	- Applications requiring traversal between data points
-	- Ability to store properties of each data point as well as relationship between them
+	- Ability to store properties of each data point as well as the relationship between them
 	- Complex queries to determine relationships between data points
 	- Need to detect patterns between data points
 	
@@ -92,7 +92,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- Messaging Queues & Why we need them
 	- Back pressure in Message based systems
 	- Event-driven architecture - How it supports decoupling, Event Handlers, Dead Letter Queues (DLQ)
-	- What are data fan outs?
+	- What are data fanouts?
 	- Point-to-point model vs Pub/Sub model
 	- Push vs Pull model. Difference b/w them
 	- What is a Poison Pill message?
@@ -103,7 +103,7 @@ What all we should prepare for System Design (High-Level Design) Interviews:
 	- File Storage Vs Block Storage Vs Object Storage - Use cases of each one
 	- Physical Machines vs Virtual Machines vs Containers as Hosts
 	- Data Protection, Encryption at Rest, Encryption in transit, Principle of least privilege
-	- Threat Modelling & Security concerns
+	- Threat Modelling & Security Concerns
 	
 ### Data Caching
 	- Eviction Policies - LRU, MRU, LFU, FIFO, LIFO, Random Replacement
