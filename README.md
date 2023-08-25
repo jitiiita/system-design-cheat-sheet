@@ -3,14 +3,15 @@ System Design Interview Preparation Cheatsheet
 What we should prepare for System Design (High-Level Design) Interviews:
 
 # TOPICS/CONCEPTS
-	- Vertical Scaling (Scale Up) Vs Horizontal Scaling (Scale Out)
+	- Vertical Scaling (Scale Up) vs. horizontal Scaling (Scale Out)
 	- Load Balancing & types -  L3, L4, L7
  		- Application-layer algorithms
    			- Hashing, Endpoint evaluation
    		- Network-layer algorithms
 			- Random selection, Round Robin, Weighted Round Robin,  Least Connections, IP hashing, Least pending requests
 	- Consistent Hashing
-	- Monolithic Architecture Vs Service Oriented Architecture (SOA) Vs MicroServices Architecture
+ 		- virtual nodes to avoid hotspot - using multiple hash functions, we can map one server multiple times on the ring
+	- Monolithic Architecture Vs Service Oriented Architecture (SOA) vs. microservices Architecture
 	- What is a Single Point of Failure (SPOF)? When does it happen?
 	- Non-functional requirements
 	- Availability (High-availability, Fault tolerance, Resilience, Reliability)
@@ -25,7 +26,7 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Traffic Estimation, QPS, TPS, Read Write Ratio
 	- Service Discovery & Health Checks
 	- Idempotence in Systems
-	- Stateful vs Stateless Systems (and their Relation to Horizontal Scaling)
+	- Stateful vs. Stateless Systems (and their Relation to Horizontal Scaling)
 	- CAP Theorem
 	- Consistency Vs Availability
 	
@@ -36,9 +37,11 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Eventual consistency (Monotonic reads, Monotonic writes, Read your own writes)
 	- Read after write/create
 	- Serializability
+ 	- Tunable Consistency
 
 ## Database Concepts
 	- Partitioning/Sharding
+ 		- Range-based partitioning, Range-based partitioning, Consistent Hashing
 	- Indexing
 	- Data Replication models - Master Master, Master-Slave, etc.
 	- Data Replication types - Leader-based, Leaderless
@@ -55,9 +58,9 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Graph
 	
 ### Which NoSQL database to choose when?
-		- As per CAP theorem, we must choose from CA, AP or CP characteristics for a given system.
+		- As per the CAP theorem, we must choose from CA, AP, or CP characteristics for a given system.
 	
-#### Choose K:V Stores if:
+#### Choose K: V Stores if:
 	- Simple schema
 	- High velocity read/write with no frequent updates
 	- High performance and scalability
@@ -97,11 +100,11 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Event-driven architecture - How it supports decoupling, Event Handlers, Dead Letter Queues (DLQ)
 	- What are data fanouts?
 	- Point-to-point model vs Pub/Sub model
-	- Push vs Pull model. Difference b/w them
+	- Push vs. Pull model. Difference b/w them
 	- What is a Poison Pill message?
 	- What is a Data Pipeline? What do we use it for?
 	- What are ETL Jobs? Why do we use them?
-	- Batch Processing vs Stream/Real Time Processing of data
+	- Batch Processing vs. Stream/Real-time Processing of data
 	- What are Cron Jobs? Why do we use them?
 	- File Storage Vs Block Storage Vs Object Storage - Use cases of each one
 	- Physical Machines vs Virtual Machines vs Containers as Hosts
