@@ -4,8 +4,11 @@ What we should prepare for System Design (High-Level Design) Interviews:
 
 # TOPICS/CONCEPTS
 	- Vertical Scaling (Scale Up) Vs Horizontal Scaling (Scale Out)
-	- Load Balancing & types - 
-			- L3, L4, L7, Round Robin, Weighted Round Robin, IP Hash, Least Connections
+	- Load Balancing & types -  L3, L4, L7
+ 		- Application-layer algorithms
+   			- Hashing, Endpoint evaluation
+   		- Network-layer algorithms
+			- Random selection, Round Robin, Weighted Round Robin,  Least Connections, IP hashing, Least pending requests
 	- Consistent Hashing
 	- Monolithic Architecture Vs Service Oriented Architecture (SOA) Vs MicroServices Architecture
 	- What is a Single Point of Failure (SPOF)? When does it happen?
