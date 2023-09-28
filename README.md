@@ -135,3 +135,54 @@ What we should prepare for System Design (High-Level Design) Interviews:
   	- Lamport clock (logical)
    	- Vector clock
 
+
+
+
+### WebSocket, Server-Sent Events (SSE), and Long Polling 
+	- are three different techniques for enabling real-time communication and data exchange between a client (usually a web browser) and a server. Each has its own characteristics and use cases.
+
+#### WebSocket:
+
+	- Description: WebSocket is a full-duplex communication protocol that provides a persistent, bidirectional, low-latency connection between a client and a server. It enables real-time data exchange without the 	
+ 		overhead of HTTP 	
+ 	requests and responses.
+	- Use Cases:
+		- Real-time Chat Applications: WebSocket is commonly used for building chat applications and multiplayer games where low latency and real-time updates are essential.
+		- Live Dashboards: WebSocket can be used to create live data dashboards that update in real-time.
+	Advantages:
+		- Low Latency: WebSocket offers minimal latency as the connection remains open.
+		- Bi-Directional: Both the server and client can send data at any time.
+		- Efficient: It reduces the overhead of HTTP requests and responses.
+	Disadvantages:
+		- Requires Server-Side Support: WebSocket requires server-side support for handling WebSocket connections.
+#### Server-Sent Events (SSE):
+
+	- Description: SSE is a unidirectional communication protocol that allows the server to push data to the client over a single HTTP connection. It's based on the EventSource API in JavaScript.
+	- Use Cases:
+		- Real-Time Notifications: SSE is suitable for applications that require real-time notifications, such as news updates or social media feeds.
+		- Monitoring and Alerts: It can be used for monitoring systems and sending alerts when specific events occur.
+	- Advantages:
+		- Simplicity: SSE is easy to implement, especially on the client side.
+		- Automatic Reconnection: SSE connections are automatically reestablished if they're interrupted.
+	- Disadvantages:
+		- Unidirectional: SSE only allows data to flow from the server to the client.
+		- Limited Browser Support: SSE is supported in most modern browsers, but not all.
+#### Long Polling:
+
+	- Description: Long Polling is a technique where the client sends an HTTP request to the server, and the server holds the request open until new data is available. When new data is available, the server responds, 
+ 		and the client immediately sends a new request.
+	- Use Cases:
+		- Legacy Browsers: Long Polling can be used in scenarios where WebSocket or SSE are not supported, such as in older web browsers.
+		- Real-Time Updates: It can be used for receiving real-time updates from the server.
+	- Advantages:
+		- Broad Compatibility: Long Polling works in a wide range of browsers and server setups.
+		- Simple Implementation: It's relatively simple to implement compared to WebSocket.
+	- Disadvantages:
+		- Increased Server Load: Long Polling can result in higher server load due to the continuous open connections and repeated requests.
+		- Latency: Long Polling introduces some latency because the server responds only when new data is available.
+
+In summary, the choice between WebSocket, SSE, and Long Polling depends on your specific requirements and the compatibility of the technology with your target audience. WebSocket is ideal for low-latency bidirectional communication, SSE is suitable for unidirectional real-time updates, and Long Polling can be used when broader browser compatibility is needed but at the cost of increased server load and potential latency.
+
+
+
+
