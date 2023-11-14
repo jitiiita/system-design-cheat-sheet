@@ -14,14 +14,14 @@ What we should prepare for System Design (High-Level Design) Interviews:
 	- Monolithic Architecture Vs Service Oriented Architecture (SOA) vs. microservices Architecture
 	- What is a Single Point of Failure (SPOF)? When does it happen?
 	- Non-functional requirements
-	- Availability (High-availability, Fault tolerance, Resilience, Reliability)
-	- Consistency
-	- Durability
-	- Maintainability
-	- Performance (Latency, Throughput)
-	- Scalability
-	- Security
-	- Observability (Metrics, Monitoring & Alarms)
+		- Availability (High-availability, Fault tolerance, Resilience, Reliability)
+		- Consistency
+		- Durability
+		- Maintainability
+		- Performance (Latency, Throughput)
+		- Scalability
+		- Security
+		- Observability (Metrics, Monitoring & Alarms)
 	- Latency, Bandwidth, Throughput, Bottlenecks
 	- Traffic Estimation, QPS, TPS, Read Write Ratio
 	- Service Discovery & Health Checks
